@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <!-- 21. Write a js program to input electricity unit charges and calculate total electricity bill according to the given condition:
+For first 50 units Rs. 0.50/unit
+For next 100 units Rs. 0.75/unit
+For next 100 units Rs. 1.20/unit
+For unit above 250 Rs. 1.50/unit
+An additional surcharge of 20% is added to the bill -->
+
+var units121 = + prompt("Enter the units")
+var units221 = + prompt("Enter the units")
+function cal21(x, y) {
+  kiloWatts = x / 1000
+  cost = kiloWatts * y;
+  console.log(cost);
+  var tax = 0.2;
+  tax1 = cost * tax;
+  console.log("Adding 20% tax is ", tax1)
+}
+cal21(units121, units221)
+    </script>
+</body>
+</html>

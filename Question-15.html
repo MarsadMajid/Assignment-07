@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <!-- 15.  Write a js program to input all sides of a triangle and check whether triangle is valid or not. -->
+        var angle114 =+ prompt("Enter the angle of one side")
+        var angle214 =+ prompt("Enter the angle of second side")
+        var angle314 =+ prompt("Enter the angle of third side")
+        function cal14 (x,y,z){
+            if (x+y>z|| x+z>y || z+x>y ||z+y>x){
+                console.log( "The sum of angles makes a triangle")
+            }
+            else {
+                console.log( "The sum of angles does not make a triangle")
+            }
+        }
+        cal14(angle114,angle214,angle314);
+
+
+    </script>
+</body>
+</html>

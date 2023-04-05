@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <!-- 18. Write a js program to calculate profit or loss. -->
+        var sale18 =+ prompt("Enter the price of the product you sold")
+        var price18 =+ prompt("Enter the price of the product you buyed")
+        function cal18 (x,y){
+            if (x>y){
+            profit =+ x - y 
+            profitPercentage = profit/x * 100
+            console.log ("you have gained", profit,"rupess" )
+            console.log ("Your profit in percentage", profitPercentage,"%")
+            }
+            else if (y>x){
+                loss =+ y - x 
+            lossPercentage = loss/x * 100
+            console.log ("you have lost" , loss,"rupess")
+            console.log("you lost in percentage" , lossPercentage,"%")
+            }    
+        }
+        cal18(sale18,price18);
+    </script>
+</body>
+</html>

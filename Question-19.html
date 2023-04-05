@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1><pre>
+        Write a js program to input marks of five subjects Physics, Chemistry, Biology, Mathematics and Computer. Calculate percentage and grade according to following:
+Percentage >= 90% : Grade A
+Percentage >= 80% : Grade B
+Percentage >= 70% : Grade C
+Percentage >= 60% : Grade D
+Percentage >= 40% : Grade E
+Percentage < 40% : Grade F
+    </pre></h1>
+    <script>
+        var phy =+ prompt("Enter you Physics number out of 100")
+        var che =+ prompt("Enter you Chemistry number out of 100")
+        var bio =+ prompt("Enter you BViology number out of 100")
+        var com =+ prompt("Enter you Computer number out of 100")
+        var math =+ prompt("Enter you Math number out of 100")
+        function res19 (a,b,c,d,e){
+            var cal19 = (a+b+c+d+e)/500 * 100 
+            alert(cal19 +" "+ "percentage" )
+            if (cal19 >= 90 ){
+                alert( cal19+ "percentage"+" " +"Grade A")
+            }
+            if (cal19 >= 80 ){
+                alert( cal19+ "percentage"+" " +"Grade B")
+            }
+            if (cal19 >= 70 ){
+                alert( cal19+ "percentage"+" " +"Grade C")
+            }
+            if (cal19 >= 60 ){
+                alert( cal19+ "percentage"+" " +"Grade D")
+            }
+            if (cal19 >= 50 ){
+                alert( cal19+ "percentage"+" " +"Grade E")
+            }
+            if (cal19 >= 40 ){
+                alert( cal19+ "percentage"+" " +"Grade F")
+            }
+            
+        }
+        res19(phy,che,bio,com,math)
+    </script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        <!-- 16. Write a js program to check whether the triangle is equilateral, isosceles or scalene triangle. -->
+        var angle114 =+ prompt("Enter the angle of one side")
+        var angle214 =+ prompt("Enter the angle of second side")
+        var angle314 =+ prompt("Enter the angle of third side")
+        function cal14 (x,y,z){
+            var result14 = x + y + z 
+            if (result14==180){
+                console.log( result14 , "The sum of angles makes a Equilateral triangle")
+            }
+            else if ( (x==y || x==z ) && x!=z || x!=y ) {
+                console.log(x,y,z,"The sum of angles  makes a Isosceles Triangle ")
+            }
+            else if  (x!=y  && x!=z  && y!=z  ) {
+                console.log(x,y,z,"The sum of angles  makes a Scalene Triangle ")
+            }
+        }
+        cal14(angle114,angle214,angle314);
+    </script>
+</body>
+</html>

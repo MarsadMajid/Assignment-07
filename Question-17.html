@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Write a js program to find all roots of a quadratic equation.</h1>
+    <script>
+        var x1 =+ prompt ("Enter The value of a in ax² + bx + c = 0")
+        var y1 =+ prompt ("Enter The value of b in ax² + bx + c = 0")
+        var z1 =+ prompt ("Enter The value of c in ax² + bx + c = 0")
+        function call (x,y,z,){
+            <!-- var cc = (x*(c*c)) + (y*cc) + z  -->
+            var dis0 = (y*y) - (4*(x*z))
+            var dismul = 2*x
+            var disx = console.log("-" , y , "+-",dis0 ,"/",dismul , "is the root answer" )
+            if (dis0==0){
+                var res0= -y / dismul + "is the root answer"  ;
+                console.log(res0)
+            }
+        }
+        call (x1,y1,z1);
+    </script>
+</body>
+</html>
